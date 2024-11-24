@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techno Savvy | ICT Services</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+    .logo {
+      font-size: 24px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+    }
+    .nav-links a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    /* Dropdown Menu */
+    .nav-links li {
+      position: relative;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      background: #444;
+      list-style: none;
+      top: 100%;
+      left: 0;
+      padding: 0;
+    }
+    .dropdown li a {
+      color: white;
+      display: block;
+      padding: 10px;
+    }
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      background: #007bff;
+      color: white;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 50px 20px;
+      background: #f4f4f4;
+      text-align: center;
+    }
+    .service-card {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px;
+      width: 300px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 10px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+      .service-card {
+        width: 90%;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Techno Savvy</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li>
+            <a href="#">More</a>
+            <ul class="dropdown">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main id="home">
+    <section class="hero">
+      <h2>Welcome to Techno Savvy</h2>
+      <p>Your partner in ICT excellence</p>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-card">
+        <h3>Networking</h3>
+        <p>We design and implement robust network solutions.</p>
+      </div>
+      <div class="service-card">
+        <h3>CCTV Installation</h3>
+        <p>Secure your premises with state-of-the-art CCTV systems.</p>
+      </div>
+      <div class="service-card">
+        <h3>Website Development</h3>
+        <p>Custom websites tailored to your business needs.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Techno Savvy. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Basic interactivity
+    document.addEventListener('DOMContentLoaded', () => {
+      alert('Welcome to Techno Savvy!');
+    });
+  </script>
+</body>
+</html>
